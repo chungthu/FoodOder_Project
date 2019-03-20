@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainactivitys"
+    tools:context=".StartActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/Restaurant"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/cheeza"
+                android:textColor="@android:color/background_light"
+                android:textSize="40sp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="@string/start"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/bg_start"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:onClick="Start"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

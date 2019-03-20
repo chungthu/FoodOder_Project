@@ -15,4 +15,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_all_product">AllProductActivity</string>
+    <string name="SizeL">Size L</string>
+    <string name="price">10</string>
+    <string name="SizeM">Size M</string>
 </resources>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/mainactivitys"
-    tools:context=".StartActivity">
+    tools:context=".ui.StartActivity">
 
 
     <RelativeLayout

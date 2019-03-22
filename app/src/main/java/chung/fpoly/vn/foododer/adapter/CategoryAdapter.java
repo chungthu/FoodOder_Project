@@ -36,7 +36,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, final int i) {
         holder.textView_item1.setText(list.get(i).getName());
-        holder.imageView_item1.setImageResource(list.get(i).getImage());
+//        holder.imageView_item1.setImageResource(list.get(i).getImage());
         holder.linearLayout_item1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="5dp"
+    android:background="@drawable/background"
     tools:context=".ui.AllProductActivity">
 
     <LinearLayout
@@ -14,6 +15,7 @@
         <TextView
             android:id="@+id/txt_pruduct"
             android:text="@string/app_name"
+            android:textColor="@android:color/background_light"
             android:textSize="30sp"
             android:gravity="center"
             android:textStyle="italic"

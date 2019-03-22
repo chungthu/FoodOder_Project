@@ -2,9 +2,9 @@ package chung.fpoly.vn.foododer.model;
 
 public class Category {
     String Name;
-    int Image;
+    String Image;
 
-    public Category(String name, int image) {
+    public Category(String name, String image) {
         Name = name;
         Image = image;
     }
@@ -17,11 +17,11 @@ public class Category {
         Name = name;
     }
 
-    public int getImage() {
+    public String getImage() {
         return Image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         Image = image;
     }
 }

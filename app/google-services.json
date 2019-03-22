@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "263738258774-makjfkvf2tshg1fvnntspu3cadrvkj8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chung.fpoly.vn.foododer",
+            "certificate_hash": "557c1efbf186da2fac0cc1cb62b17ddd4fe60853"
+          }
+        },
+        {
           "client_id": "263738258774-uvek837u5pgee0odecqd7hfuntu9m1h9.apps.googleusercontent.com",
           "client_type": 3
         }

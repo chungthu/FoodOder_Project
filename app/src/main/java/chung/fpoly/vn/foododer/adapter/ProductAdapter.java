@@ -74,11 +74,6 @@ public class ProductAdapter extends BaseAdapter {
             holder = (ViewHolder) row.getTag();
         }
 
-
-//        holder.name.setText(product.getName());
-//        holder.imageView.setImageResource(product.getImage());
-//        holder.pricem.setText(product.getPriceM());
-//        holder.pricel.setText(product.getPriceL());
         return row;
     }
 }

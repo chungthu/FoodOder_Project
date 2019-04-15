@@ -4,10 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -36,15 +39,17 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, final int i) {
         holder.textView_item1.setText(list.get(i).getName());
-//        holder.imageView_item1.setImageResource(list.get(i).getImage());
-        holder.linearLayout_item1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, ""+i, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(context, AllProductActivity.class);
-                context.startActivity(intent);
-            }
-        });
+
+        Picasso.with(context).load(list.get(i).getImage())
+                .into(holder.imageView_item1);
+//        holder.linearLayout_item1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(context, ""+i, Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(context, AllProductActivity.class);
+//                context.startActivity(intent);
+//            }
+//        });
     }
 
     @Override

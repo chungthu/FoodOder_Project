@@ -32,6 +32,10 @@ public class CategorysFragment extends Fragment {
     private LinearLayoutManager linearLayoutManager;
     private FirebaseDatabase database;
     private DatabaseReference ref;
+    FirebaseRecyclerOptions<Category> options;
+//    private CategoryAdapter adapters;
+//    private List<Category> list;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -39,9 +43,17 @@ public class CategorysFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_categorys, container, false);
 
 
+        database = FirebaseDatabase.getInstance();
+        ref = database.getReference().child("Categorys");
+
+//        list = new ArrayList<>();
+//        list = (List<Category>) ref;
+//        adapters = new CategoryAdapter(getContext(),list);
+
         recyclerView = view.findViewById(R.id.re_categorys);
         linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setAdapter(adapter);
         FirebaseApp.initializeApp(getContext());
         
         loadlist();
@@ -57,7 +69,7 @@ public class CategorysFragment extends Fragment {
 
         Log.e("Tag","Name "+ref);
 
-        FirebaseRecyclerOptions<Category> options = new FirebaseRecyclerOptions.Builder<Category>().setQuery(ref,Category.class).build();
+        options = new FirebaseRecyclerOptions.Builder<Category>().setQuery(ref,Category.class).build();
         adapter = new FirebaseRecyclerAdapter<Category, CategoryViewHolder>(options) {
             @NonNull
             @Override
@@ -76,6 +88,8 @@ public class CategorysFragment extends Fragment {
 
             }
         };
+
+        adapter.startListening();
 
         recyclerView.setAdapter(adapter);
 

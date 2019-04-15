@@ -1,27 +1,27 @@
 package chung.fpoly.vn.foododer.model;
 
 public class Category {
-    String Name;
-    String Image;
+    String name;
+    String image;
 
     public Category(String name, String image) {
-        Name = name;
-        Image = image;
+        this.name = name;
+        this.image = image;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getImage() {
-        return Image;
+        return image;
     }
 
     public void setImage(String image) {
-        Image = image;
+        this.image = image;
     }
 }

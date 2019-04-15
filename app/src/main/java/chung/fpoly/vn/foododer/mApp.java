@@ -1,8 +1,8 @@
 package chung.fpoly.vn.foododer;
 
-import android.app.Application;
+        import android.app.Application;
 
-import com.google.firebase.FirebaseApp;
+        import com.google.firebase.FirebaseApp;
 
 public class mApp extends Application {
 
